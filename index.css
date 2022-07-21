@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    padding: 16px;
+}
+
+.input-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* add margin above terms section */
+form div:nth-of-type(4) {
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+.checkbox-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+label {
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.form-input {
+    height: 35px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    font-size: 14px;
+    margin: 5px 0;
+    padding-left: 7px;
+}
+
+.input-split {
+    max-width: 230px;
+}
+
+.terms-wrapper {
+    max-width: 70%;
+}
+
+p {
+    font-size: 11px;
+}
+
+.terms-register {
+    background-color: rgb(66, 139, 202);
+    border-radius: 3px;
+    padding: 3px;
+    color: white;
+}
+
+.terms-link {
+    color:rgb(66, 139, 202);
+}
+
+.btn {
+    height: 35px;
+    width: 230px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    color: white;
+}
+
+.register-btn {
+    background-color: rgb(66, 139, 202);
+}
+
+.signin-btn {
+    background-color: rgb(92, 184, 92);
+}
+
+@media (max-width: 480px) {
+    .input-wrapper {
+        flex-direction: column;
+    }
+    .input-split {
+        min-width: 100%;
+    }
+    .form-input {
+        min-width: 100%;
+    }
+    p {
+        margin-top: 5px;
+    }
+    .terms-wrapper {
+        min-width: 100%;
+    }
+    .btn {
+        margin-top: 10px;
+        width: 100%;
+    }
+}
